@@ -16,3 +16,14 @@ Also give a theoretical argument for why X could or could not be correct, based
 on the complexity of the general sorting problem we covered in class.
 
 Add your answers to this markdown file.
+
+To verify that the sorting algorithm sorts in $O(n)$ time based on comparisons, I would start by testing the algorithm empirically. Since the algorithm is a black box and cannot be inspected directly, I can still test its performance. To do so, I would run the algorithm on arrays of varying sized and compare its runtime to known algorithms. If the algorithm is $O(n)$, it would be expected that its runtime would grow lineraly with the input size. Additionally, I would test the algorithm on different input patterns to check for consistent performance across various input cases. Lastly, I would also count the number of comparisons made during sorting and check if the algorithm performs fewer than (nlogn) comparisons, which would provide strong evidence that the claim might be true.
+
+From a theoretical standpoint, we know that for algorithms that compare pairs of elements, the number of comparisons needed to sort n elements must be at least Ω (n log n). This is because there are (n!) possible ways to order (n) elements. As such, any sorting algorithm must distinguish between all these options, requiring at least log_2(n!) comparisons. Since Log_2(n!)∈Θ(nlogn),, no algorithm that is comparison based can perform better than $O(nlogn)$ which makes this proposed algorithm theoretically impossible. 
+
+“I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.”
+
+For this assignment, I recieved help from Chat GPT for formatting, word usage, and overall readability.
